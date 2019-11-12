@@ -1,6 +1,17 @@
+<div class="container">
+<div class="title">
 <h1>Chat Room</h1>
-<input type="text" id="chat-input">
-<button id="button">送信</button>
+</div>
+<form action="" class ="form-inline">
+    <div class="form-group">
+        <input  type="text" class="form-control input" id="chat-input" placeholder="入力してください"　required/>
+    </div>
+    <button class="btn btn-primary" id="button">送信</button>
+</form>
+
 <div id="messages">
+<ul class="list-group">
 <%= render @messages %>
+</ul>
+</div>
 </div>
